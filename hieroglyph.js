@@ -21,3 +21,6 @@ function characterConverter(){
   document.getElementById("result_area").textContent = text;
 }
 
+function clearInputArea(){
+  document.getElementById("input_area").value = "";
+}
