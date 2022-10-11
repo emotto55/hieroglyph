@@ -18,6 +18,8 @@ function characterConverter(){
   		text = text.replace(re, alpha[i]);
   	}
   }
+  // X 対応。KS⇒KS(KSorX) に置き換え
+  text = text.replace(/KS/g, "KS(KSorX)");
 
   console.log(text);
   document.getElementById("result_area").textContent = text;
